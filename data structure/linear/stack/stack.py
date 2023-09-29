@@ -15,10 +15,18 @@ class Stack:
         return self.stack.pop()
 
 
-stack = Stack()
-stack.push(str(1))
-stack.push(str(2))
-stack.push(str(3))
-stack.push(str(4))
-print("popped item: " + stack.pop())
-print("stack after popping an element: " + str(stack.stack))
+
+if __name__ == "__main__":
+   
+    #use case 
+
+    # 1. reverse a string
+    string = "Hello World"
+    stack = Stack()
+    for char in string:
+        stack.push(char)
+    reversed_string = ""
+    while not stack.is_empty():
+        reversed_string += stack.pop()
+    print(reversed_string)
+
