@@ -10,16 +10,16 @@ This repository contains the implementation of the data structures and algorithm
 
 ### linear data structures
 
-- [x] [Array]
-- [x] [Linked List]
-- [x] [Stack]
-- [x] [Queue]
+- [x] Array
+- [x] Linked List
+- [x] Stack
+- [x] Queue
 
 
 
 ### non-linear data structures
 
-- [ ] [Tree]
-- [ ] [Graph]
-- [ ] [Heap]
-- [ ] [map]
+- [ ] Tree
+- [ ] Graph
+- [ ] Heap
+- [ ] map
