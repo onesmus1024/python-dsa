@@ -13,7 +13,6 @@ class LinkedList:
     
     def  print_list(self):
         temp = self.head
-
         while temp is not None:
             print(temp.value)
             temp = temp.next
@@ -34,6 +33,7 @@ class LinkedList:
     def pop(self):
         if self.head == None:
             print("The list is empty")
+            return 
         previous = self.head
         temp = self.head
 
@@ -47,10 +47,18 @@ class LinkedList:
         if self.length == 0:
             self.head = None
             self.tail = None
-        
-
-
             return temp.value
+    
+    def prepend(self,value):
+        new_node = Node(value)
+        if self.head == None:
+            self.tail = new_node
+        new_node.next = self.head
+        self.head = new_node
+        self.length +=1
+            
+            
+        
 
 
 
@@ -80,9 +88,18 @@ if __name__ == '__main__':
     print("Remove One Node")
     towns_to_visit.pop()
     towns_to_visit.pop()
+    towns_to_visit.pop()
+ 
 
     # Get towns
     towns_to_visit.print_list()
+
+    #prepend town
+    print("Prepend")
+    towns_to_visit.prepend("Kiambu")
+    towns_to_visit.print_list()
+
+    
     
     
 
