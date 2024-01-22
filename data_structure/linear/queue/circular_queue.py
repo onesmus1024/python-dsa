@@ -6,7 +6,7 @@ class MyCircularQueue():
         self.queue = [None] * k
         self.head = self.tail = -1
 
-    # Insert an element into the circular queue
+    # Insert an element into the circular queue 
     def enqueue(self, data):
 
         if ((self.tail + 1) % self.k == self.head):
